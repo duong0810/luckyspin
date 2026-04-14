@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.75" name="LuckyDrawDB">
+  <DataContextMoniker Name="/LuckyDrawDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ed7d4afa-8742-474a-92bf-5e854fdbc622" absoluteBounds="0.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/LuckyDrawDBDataContext/LUCKY_DRAW" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c127bd25-3f9e-4266-b70a-5213c5870708" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb0e457e-9cbc-4a1d-af88-ba7704ba56bc" absoluteBounds="0.75, 5.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/LuckyDrawDBDataContext/LUCKY_DRAW_PROGRAME" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a018013-e4f3-48ed-ab3c-73c017fcaf4e" absoluteBounds="0.765, 6.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2442a5df-56fa-43fe-a58f-cf092078cab9" absoluteBounds="3.75, 5.75, 2, 5.8092268880208318">
+      <DataClassMoniker Name="/LuckyDrawDBDataContext/LUCKY_DRAW_PROGRAME_HISTORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e67beac1-d19b-49fa-83ef-7d3c72e83989" absoluteBounds="3.765, 6.21, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c742f761-0d24-4a61-8705-2c23205d795a" absoluteBounds="6.75, 0.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/LuckyDrawDBDataContext/LUCKY_DRAW_KOKAKU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="578b2007-6e3d-490e-94ce-6e86ffe7e302" absoluteBounds="6.7650000000000006, 1.2100000000000009, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a455530e-ad67-4cc4-b978-4774bf302ce3" absoluteBounds="3.25, 1, 2.625, 4.0785139973958326">
+      <DataClassMoniker Name="/LuckyDrawDBDataContext/LUCKY_DRAW_MEISAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f09a081-53be-4768-af6c-eeb9c364984a" absoluteBounds="3.265, 1.46, 2.5949999999999998, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

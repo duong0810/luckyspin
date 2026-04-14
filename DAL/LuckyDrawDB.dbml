@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LuckyDraw" Class="LuckyDrawDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.LUCKY_DRAW" Member="LUCKY_DRAWs">
+    <Type Name="LUCKY_DRAW">
+      <Column Name="LUCKY_DRAW_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_NAME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_BUNRUI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_TITLE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_SLOGAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_BG_IMG" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LUCKY_DRAW_SLOT_NUM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KOSIN_NAIYOU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="KOSIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KOSIN_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUCKY_DRAW_PROGRAME" Member="LUCKY_DRAW_PROGRAMEs">
+    <Type Name="LUCKY_DRAW_PROGRAME">
+      <Column Name="LUCKY_DRAW_PROGRAME_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_PROGRAME_NAME" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="KAISHI_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SYURYOU_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="PROGRAME_SLOGAN" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TOROKU_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KOSIN_NAIYOU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="KOSIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KOSIN_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUCKY_DRAW_PROGRAME_HISTORY" Member="LUCKY_DRAW_PROGRAME_HISTORies">
+    <Type Name="LUCKY_DRAW_PROGRAME_HISTORY">
+      <Column Name="PROGRAME_JISSHI_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_PROGRAME_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MITUMORI_NO_SANSYO" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="KOKAKU_HITO_NAME" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="KOKAKU_HITO_PHONE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_HITO_ADDRESS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="RATE_LOG_SPLIT" Type="System.String" DbType="VarChar(2500)" CanBeNull="true" />
+      <Column Name="KENSYO_DRAW_MEISAI_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KENSYO_VOUCHER_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KENSYO_DRAW_MEISAI_SURYO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KAISHI_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SYURYOU_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TOROKU_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="JISSHI_KAISHI_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="JISSHI_SYURYOU_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MAE_JISSHI_BG_IMG" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ATO_JISSHI_BG_IMG" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KOKAKU_NAME_SYUTOKU" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="KOKAKU_PHONE_SYUTOKU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_SHOUMEISYO_NO_SYUTOKU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_ADDRESS_SYUTOKU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_SYUTOKU_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TANTO_SYA_NAME" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MITUMORI_NO_SYUTOKU_SANSYO" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUCKY_DRAW_KOKAKU" Member="LUCKY_DRAW_KOKAKUs">
+    <Type Name="LUCKY_DRAW_KOKAKU">
+      <Column Name="LUCKY_DRAW_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KOKAKU_HITO_PHONE" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KOKAKU_HITO_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_HITO_IMG" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KOKAKU_ADDRESS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="KOKAKU_SHOUMEISYO_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KOKAKU_MUKO_FLG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOROKU_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KOSIN_NAIYOU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="KOSIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KOSIN_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KAISHI_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SYURYOU_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LUCKY_DRAW_MEISAI" Member="LUCKY_DRAW_MEISAIs">
+    <Type Name="LUCKY_DRAW_MEISAI">
+      <Column Name="LUCKY_DRAW_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_MEISAI_NO" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_MEISAI_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_MEISAI_NAIYOU" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_MEISAI_IMG" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LUCKY_DRAW_MEISAI_RATE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_MEISAI_SURYO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_MEISAI_ONSHOU_NUM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LUCKY_DRAW_MEISAI_BUNRUI" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LUCKY_DRAW_MEISAI_MUKO_FLG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOROKU_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TOROKU_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KOSIN_NAIYOU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="KOSIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KOSIN_ID" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="KAISHI_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SYURYOU_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
